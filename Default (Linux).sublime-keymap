@@ -1,0 +1,27 @@
+[
+	{ "keys": ["ctrl+7"], "command": "toggle_comment", "args": { "block": false } },
+	{ "keys": ["ctrl+shift+7"], "command": "toggle_comment", "args": { "block": true } },
+	{
+	    "keys": ["tab"], "command": "expand_abbreviation_by_tab", "context": [
+	        {
+	            "operand": "source.js", 
+	            "operator": "equal", 
+	            "match_all": true, 
+	            "key": "selector"
+	        },
+	        {   
+	            "key": "selection_empty", 
+	            "operator": "equal", 
+	            "operand": "true",
+	            "match_all": true 
+	        }
+	    ]
+	},
+	{ "keys": ["tab"], "command": "next_field", "context":
+	    [
+	        { "key": "has_next_field", "operator": "regex_match", "operand": ".*<$" }
+	    ]
+	},
+	{ "keys": ["ctrl+shift+2"], "command": "jsdoc_param" },
+	{ "keys": ["ctrl+ñ"], "command": "goto_symbol_in_project" },
+]
