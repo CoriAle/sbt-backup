@@ -1,0 +1,8 @@
+// SublimeLinter Settings - User
+{
+	"linters": {
+	    "sass": {
+	        "working_dir": "${/home/cori}"
+	    }
+	}
+}
